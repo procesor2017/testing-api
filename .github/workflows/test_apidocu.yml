@@ -16,5 +16,6 @@ jobs:
       - name: Dredd
         run: |
           npm install -g dredd
+          cd dredd
           dredd --config dredd_apiari.yml
   
