@@ -7,9 +7,13 @@ on:
         
 jobs:
   starts_dredd:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2.3.2
+      - name: Use Node.js
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
       - name: Dredd
         run: |
           npm install -g dredd

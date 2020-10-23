@@ -7,8 +7,8 @@ server: npm start
 server-wait: 3
 init: false
 custom:
-  apiaryApiKey: 
-  apiaryApiName:
+  apiaryApiKey: ${{ secrets.APIARYAPIKEY }}
+  apiaryApiName: ${{ secrets.APIARYAPINAME }}
 names: false
 only: []
 reporter: apiary
