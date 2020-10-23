@@ -1,0 +1,19 @@
+name: Test-api
+
+on:
+  push:
+    branches:
+      - main
+        
+jobs:
+  starts_dredd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.2
+      - name: Dredd
+        run: |
+          npm install
+          npm update
+          npm install -g dredd
+          dredd --config dredd_apiari.yml
+  
