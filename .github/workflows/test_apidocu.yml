@@ -16,5 +16,5 @@ jobs:
       - name: Dredd
         run: |
           npm install -g dredd
-          dredd init -r apiary -j apiaryApiKey:${{ secrets.APIARYAPIKEY }} -j apiaryApiName:${{ secrets.apiaryApiName }}
+          dredd init -r apiary -p apifortest/apifortest.apib  -j apiaryApiKey:${{ secrets.APIARYAPIKEY }} -j apiaryApiName:${{ secrets.apiaryApiName }}
   
