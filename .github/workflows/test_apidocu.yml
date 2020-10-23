@@ -16,5 +16,5 @@ jobs:
       - name: Dredd
         run: |
           npm install -g dredd
-          dredd --config dredd/dredd_apiari.yml
+          dredd init -r apiary -j apiaryApiKey:${{ secrets.APIARYAPIKEY }} -j apiaryApiName:${{ secrets.apiaryApiName }}
   
