@@ -1,5 +1,7 @@
 # Testing-api - How to test api
 
+![Test-api](https://github.com/procesor2017/testing-api/workflows/Test-api/badge.svg)
+
 ## [API Documentation](https://testfortesena.docs.apiary.io/) | [Tesena](https://www.tesena.com/)
 
 
@@ -9,6 +11,8 @@ Repository shows how to tests api documentation with [dredd](https://dredd.org/e
 ## Folder structure
 ```
 Testing-api
+└── .github/workflows           # Folder with CI for github actions
+│    └── test_apidocu.yml       # Config for CI
 └── apifortest                  # Folder with blueprint which you can test
 │    └── apifortest.apib        # Blueprint generete from apiari
 └── dredd                       # Folder with config for dredd
