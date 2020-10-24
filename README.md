@@ -51,3 +51,4 @@ Testing-api
 - [Api documentation](https://testfortesena.docs.apiary.io/)
 - [Dredd](https://dredd.org/en/latest/)
 - [Examples for hooks](https://github.com/apiaryio/dredd/blob/master/docs/how-to-guides.rst)
+- [dredd-hooks-template](https://github.com/apiaryio/dredd-hooks-template)
