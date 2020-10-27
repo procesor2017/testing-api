@@ -9,8 +9,8 @@ init: false
 custom: {}
 names: false
 only: []
-reporter: []
-output: []
+reporter: [html]
+output: [./output]
 header: []
 sorted: false
 user: null
