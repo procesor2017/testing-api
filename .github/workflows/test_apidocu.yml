@@ -7,7 +7,7 @@ on:
         
 jobs:
   starts_dredd:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.2
       - uses: actions/setup-node@v2-beta
@@ -17,5 +17,5 @@ jobs:
         run: |
           npm install -g dredd
           cd dredd
-          dredd --config dredd_apiari.yml
+          dredd --config dredd_apiari.yml -j apiaryApiKey:${{ secrets.APIARYAPIKEY }} -j apiaryApiName:${{ secrets.APIARYAPINAME }}
   
