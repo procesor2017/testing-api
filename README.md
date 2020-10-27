@@ -22,6 +22,7 @@ Testing-api
 └── hooks                       # Folder with config for dredd
 │    └── hooks.js               # Example how to use dredds hooks
 └── README.MD                   # Here you are :-)
+└── package.json                # Repair some err in cmd, files just for npm (Doesnt have any use)
 ```
 
 ## Install
@@ -44,6 +45,13 @@ Testing-api
     - Go to dredd folder with cd ```<path_to_repository>/dredd```
     - Use command ```dredd -config dredd_hooks.yml```
     - If you want have yourself dredd.yml you can install with ``` dredd wizard```
+
+## Report
+Report is set in the dredd/dredd.yml under
+```
+reporter: [html]
+output: [./report/output.html]
+``` 
 
 
 
